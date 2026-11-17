@@ -1,0 +1,308 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #263238;
+    line-height: 1.6;
+}
+
+
+
+
+header {
+    background-color: #173b57;
+    color: white;
+    padding: 1rem 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.7rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+
+}
+
+nav a:hover {
+    background-color: #176b75;
+
+}
+
+
+
+
+.hero {
+    min-height: 65vh;
+    padding: 4rem 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #dceef2;
+
+}
+
+.hero h1 {
+    color: #173b57;
+    font-size: 2.5rem;
+
+}
+
+.hero h3 {
+    color: #176b75;
+}
+
+.hero p {
+    font-size: 1.1rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #176b75;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+
+}
+
+.btn:hover {
+    background-color: #104c54;
+
+}
+
+
+
+
+section {
+    background-color: white;
+    width: 90%;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid #d6e0e8;
+    border-radius: 10px;
+
+}
+
+section h2 {
+    color: #176b75;
+    border-bottom: 2px solid #d6e9ed;
+    padding-bottom: 0.5rem;
+}
+
+
+
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#About img {
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #176b75;
+
+}
+
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+th {
+    background-color: #173b57;
+    color: white;
+}
+
+th,
+td {
+    border: 1px solid #b9c9d5;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #edf5f7;
+}
+
+
+
+
+.project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+}
+
+.project-card {
+    background-color: #edf5f7;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #d6e0e8;
+
+}
+
+.project-card h3 {
+    color: #176b75;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+
+
+
+#Education dt {
+    color: #176b75;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+#Education dd {
+    margin: 0.3rem 0 1rem;
+}
+
+
+
+
+#Contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+#Contact input,
+#Contact textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #b9c9d5;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+}
+
+#Contact input:focus,
+#Contact textarea:focus {
+    outline: 2px solid #176b75;
+}
+
+button {
+    background-color: #176b75;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+
+button:hover {
+    background-color: #104c54;
+
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #173b57;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 600px) {
+
+    header {
+        flex-direction: row;
+    }
+
+    .about-content {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 992px) {
+
+    section {
+        padding: 2.5rem;
+    }
+
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+}
